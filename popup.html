@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FB Scraper</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 15px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    h1 {
+      font-size: 18px;
+      margin-top: 0;
+      color: #1877f2; /* FB Blue */
+    }
+    .controls {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+    button {
+      flex: 1;
+      padding: 8px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.2s;
+    }
+    #startBtn {
+      background-color: #1877f2;
+      color: white;
+    }
+    #startBtn:hover {
+      background-color: #166fe5;
+    }
+    #startBtn:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+    #stopBtn {
+      background-color: #e4e6eb;
+      color: black;
+    }
+    #stopBtn:hover {
+      background-color: #d8dadf;
+    }
+    .status {
+      padding: 10px;
+      background-color: #f0f2f5;
+      border-radius: 4px;
+      font-size: 13px;
+      color: #65676b;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>FB Comment Scraper</h1>
+  
+  <div class="controls">
+    <button id="startBtn">Start Scraping</button>
+    <button id="stopBtn" disabled>Stop</button>
+  </div>
+
+  <div id="status" class="status">
+    Ready to scrape.
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

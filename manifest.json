@@ -1,0 +1,20 @@
+{
+  "name": "Facebook Comment Scraper",
+  "description": "Scrape comments from Facebook posts to CSV",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "hello_extensions.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.facebook.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
