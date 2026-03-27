@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FB Comment Scraper — Chrome Extension to Export Facebook Comments to CSV</title>
+  <meta name="description" content="Free Chrome Extension (Manifest V3) to scrape Facebook post comments and export them as CSV. Auto-scroll, expand threads, smart parsing.">
+  <meta property="og:title" content="FB Comment Scraper">
+  <meta property="og:description" content="Chrome Extension to scrape Facebook comments and export to CSV">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-icon">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="80" height="60" rx="12" fill="rgba(255,255,255,0.2)"/>
+            <polygon points="20,60 30,80 40,60" fill="rgba(255,255,255,0.2)"/>
+            <line x1="16" y1="22" x2="64" y2="22" stroke="rgba(255,255,255,0.5)" stroke-width="3" stroke-linecap="round"/>
+            <line x1="16" y1="34" x2="56" y2="34" stroke="rgba(255,255,255,0.5)" stroke-width="3" stroke-linecap="round"/>
+            <line x1="16" y1="46" x2="44" y2="46" stroke="rgba(255,255,255,0.5)" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h1>FB Comment Scraper</h1>
+        <p class="tagline">Chrome Extension to scrape Facebook post comments and export to CSV.<br>No dependencies. No accounts. Just one click.</p>
+        <div class="hero-badges">
+          <span class="badge">Manifest V3</span>
+          <span class="badge">Vanilla JS</span>
+          <span class="badge">MIT License</span>
+        </div>
+        <div class="hero-actions">
+          <a href="https://github.com/dan-tech-academy/fb-comments-export-extensions" class="btn btn-primary">View on GitHub</a>
+          <a href="#install" class="btn btn-secondary">Install Guide</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features" id="features">
+    <div class="container">
+      <h2>Features</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">&#8595;</div>
+          <h3>Auto-Scroll</h3>
+          <p>Automatically scrolls the entire page to load all comments, even on long threads.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">&#8618;</div>
+          <h3>Thread Expansion</h3>
+          <p>Clicks "View more comments", "See more", and expands all reply threads.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">&#9881;</div>
+          <h3>Smart Parsing</h3>
+          <p>Extracts author name, comment text, and timestamp from Facebook's DOM.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">&#128196;</div>
+          <h3>CSV Export</h3>
+          <p>One-click download as <code>fb_comments.csv</code> with Author, Comment, Date columns.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">&#128241;</div>
+          <h3>Dual Layout</h3>
+          <p>Works on both desktop and mobile Facebook views for maximum compatibility.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Demo -->
+  <section class="demo" id="demo">
+    <div class="container">
+      <h2>See It in Action</h2>
+      <div class="demo-wrapper">
+        <img src="assets/demo.svg" alt="FB Comment Scraper demo showing the extension scraping 142 comments" width="340" height="280">
+      </div>
+      <div class="csv-preview">
+        <div class="csv-header">fb_comments.csv</div>
+        <pre><code>Author,Comment,Date
+"John Doe","Great post!","2d"
+"Jane Smith","Thanks for sharing","1w"
+"Bob Wilson","Very helpful, bookmarked!","3d"</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="how-it-works" id="how">
+    <div class="container">
+      <h2>How It Works</h2>
+      <div class="pipeline">
+        <div class="pipeline-step">
+          <div class="step-number">1</div>
+          <div class="step-label">Click Start</div>
+        </div>
+        <div class="pipeline-arrow">&rarr;</div>
+        <div class="pipeline-step">
+          <div class="step-number">2</div>
+          <div class="step-label">Auto-Scroll</div>
+        </div>
+        <div class="pipeline-arrow">&rarr;</div>
+        <div class="pipeline-step">
+          <div class="step-number">3</div>
+          <div class="step-label">Expand Threads</div>
+        </div>
+        <div class="pipeline-arrow">&rarr;</div>
+        <div class="pipeline-step">
+          <div class="step-number">4</div>
+          <div class="step-label">Parse Comments</div>
+        </div>
+        <div class="pipeline-arrow">&rarr;</div>
+        <div class="pipeline-step">
+          <div class="step-number">5</div>
+          <div class="step-label">Download CSV</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Install -->
+  <section class="install" id="install">
+    <div class="container">
+      <h2>Installation</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-content">
+            <h3>Clone the repository</h3>
+            <pre><code>git clone https://github.com/dan-tech-academy/fb-comments-export-extensions.git</code></pre>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-content">
+            <h3>Load in Chrome</h3>
+            <p>Go to <code>chrome://extensions</code> &rarr; Enable <strong>Developer mode</strong> &rarr; Click <strong>Load unpacked</strong> &rarr; Select the cloned folder.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-content">
+            <h3>Start scraping</h3>
+            <p>Open any Facebook post &rarr; Resize window to narrow width &rarr; Click the extension icon &rarr; Hit <strong>Start Scraping</strong>.</p>
+            <p class="tip">Pro tip: Narrow window triggers Facebook's mobile layout, making scraping faster and more precise.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="sponsor">
+        <p>Sponsored by <a href="https://www.dantech.academy" target="_blank" rel="noopener">DanTech Academy</a></p>
+        <p class="sponsor-sub">Part of the tutorial series &middot; <a href="https://www.dantech.academy/kotlin-accelerator" target="_blank" rel="noopener">Kotlin Accelerator Course</a></p>
+      </div>
+      <div class="footer-bottom">
+        <p>MIT License &middot; Made with JavaScript &middot; No dependencies</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
