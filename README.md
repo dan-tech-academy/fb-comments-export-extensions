@@ -1,18 +1,6 @@
 <div align="center">
 
-```
- _____ ____     ____                                      _
-|  ___| __ )   / ___|___  _ __ ___  _ __ ___   ___ _ __ | |_
-| |_  |  _ \  | |   / _ \| '_ ` _ \| '_ ` _ \ / _ \ '_ \| __|
-|  _| | |_) | | |__| (_) | | | | | | | | | | |  __/ | | | |_
-|_|   |____/   \____\___/|_| |_| |_|_| |_| |_|\___|_| |_|\__|
- ____
-/ ___|  ___ _ __ __ _ _ __   ___ _ __
-\___ \ / __| '__/ _` | '_ \ / _ \ '__|
- ___) | (__| | | (_| | |_) |  __/ |
-|____/ \___|_|  \__,_| .__/ \___|_|
-                      |_|
-```
+# 💬 FB Comment Scraper
 
 **Chrome Extension (Manifest V3) to scrape Facebook post comments and export to CSV**
 
@@ -29,10 +17,6 @@
 
 <!-- Replace with your actual demo GIF -->
 <!-- Record with: Chrome DevTools > More Tools > Recorder, or use a screen recorder -->
-
-> **Coming soon** — a short GIF showing the extension in action.
->
-> In the meantime, here's what it looks like:
 
 ```
 ┌─────────────────────────────┐
