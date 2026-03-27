@@ -29,3 +29,13 @@ Chrome Extension (Manifest V3) that scrapes comments from Facebook posts and exp
 
 - Facebook frequently changes its DOM structure — selectors may need updating if scraping stops working.
 - Very large exports may hit browser size limits for `data:` URI downloads.
+
+## Sponsor
+
+This project is part of the tutorial series by [DanTech Academy](https://www.dantech.academy).
+
+Sponsored by the [Kotlin Accelerator Course](https://www.dantech.academy/kotlin-accelerator) — a hands-on course to master Kotlin from fundamentals to advanced topics.
+
+## License
+
+MIT
