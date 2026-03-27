@@ -20,10 +20,11 @@ Chrome Extension (Manifest V3) that scrapes comments from Facebook posts and exp
 ## Usage
 
 1. Open a Facebook post with comments.
-2. Click the extension icon in the toolbar.
-3. Click **Start Scraping** — the extension will scroll, expand threads, and parse comments.
-4. A `fb_comments.csv` file will download automatically when finished.
-5. Click **Stop** at any time to cancel.
+2. **Tip:** Resize the browser window to a narrow width so Facebook loads its mobile layout — this makes scraping more precise and faster.
+3. Click the extension icon in the toolbar.
+4. Click **Start Scraping** — the extension will scroll, expand threads, and parse comments.
+5. A `fb_comments.csv` file will download automatically when finished.
+6. Click **Stop** at any time to cancel.
 
 ## Limitations
 
