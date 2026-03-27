@@ -17,21 +17,9 @@
 
 ## Demo
 
-<!-- Replace with your actual demo GIF -->
-<!-- Record with: Chrome DevTools > More Tools > Recorder, or use a screen recorder -->
-
-```
-┌─────────────────────────────┐
-│  FB Comment Scraper         │
-│                             │
-│  [▶ Start Scraping] [Stop]  │
-│                             │
-│  ✓ Scrolling to load...     │
-│  ✓ Expanding threads...     │
-│  ✓ Parsing 142 comments...  │
-│  ✓ Exported to CSV!         │
-└─────────────────────────────┘
-```
+<p align="center">
+  <img src="demo.svg" alt="FB Comment Scraper Demo" width="340">
+</p>
 
 ## Features
 

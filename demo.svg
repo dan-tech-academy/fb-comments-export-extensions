@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 280" fill="none">
+  <defs>
+    <filter id="shadow" x="-4%" y="-4%" width="108%" height="108%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  <!-- Window frame -->
+  <rect x="10" y="10" width="320" height="260" rx="12" fill="#ffffff" stroke="#e4e6eb" stroke-width="1.5" filter="url(#shadow)"/>
+  <!-- Title bar -->
+  <rect x="10" y="10" width="320" height="40" rx="12" fill="#f0f2f5"/>
+  <rect x="10" y="38" width="320" height="12" fill="#f0f2f5"/>
+  <!-- Window dots -->
+  <circle cx="30" cy="30" r="5" fill="#ff5f57"/>
+  <circle cx="48" cy="30" r="5" fill="#febc2e"/>
+  <circle cx="66" cy="30" r="5" fill="#28c840"/>
+  <!-- Title text -->
+  <text x="170" y="35" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#1877f2">
+    FB Comment Scraper
+  </text>
+  <!-- Buttons -->
+  <rect x="30" y="68" width="150" height="36" rx="6" fill="#1877f2"/>
+  <text x="105" y="91" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="white">
+    Start Scraping
+  </text>
+  <rect x="190" y="68" width="120" height="36" rx="6" fill="#e4e6eb"/>
+  <text x="250" y="91" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="bold" fill="#333">
+    Stop
+  </text>
+  <!-- Status area -->
+  <rect x="30" y="120" width="280" height="130" rx="8" fill="#f0f2f5"/>
+  <!-- Status lines -->
+  <text x="46" y="148" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#28c840" font-weight="bold">&#x2713;</text>
+  <text x="66" y="148" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#65676b">Scrolling to load...</text>
+  <text x="46" y="174" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#28c840" font-weight="bold">&#x2713;</text>
+  <text x="66" y="174" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#65676b">Expanding threads...</text>
+  <text x="46" y="200" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#28c840" font-weight="bold">&#x2713;</text>
+  <text x="66" y="200" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#65676b">Parsing 142 comments...</text>
+  <text x="46" y="226" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#28c840" font-weight="bold">&#x2713;</text>
+  <text x="66" y="226" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" fill="#1877f2" font-weight="600">Exported to CSV!</text>
+</svg>
