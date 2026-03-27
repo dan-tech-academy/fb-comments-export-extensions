@@ -1,42 +1,130 @@
-# Facebook Comment Scraper — Chrome Extension
+<div align="center">
 
-Chrome Extension (Manifest V3) that scrapes comments from Facebook posts and exports them as a CSV file.
+```
+ _____ ____     ____                                      _
+|  ___| __ )   / ___|___  _ __ ___  _ __ ___   ___ _ __ | |_
+| |_  |  _ \  | |   / _ \| '_ ` _ \| '_ ` _ \ / _ \ '_ \| __|
+|  _| | |_) | | |__| (_) | | | | | | | | | | |  __/ | | | |_
+|_|   |____/   \____\___/|_| |_| |_|_| |_| |_|\___|_| |_|\__|
+ ____
+/ ___|  ___ _ __ __ _ _ __   ___ _ __
+\___ \ / __| '__/ _` | '_ \ / _ \ '__|
+ ___) | (__| | | (_| | |_) |  __/ |
+|____/ \___|_|  \__,_| .__/ \___|_|
+                      |_|
+```
+
+**Chrome Extension (Manifest V3) to scrape Facebook post comments and export to CSV**
+
+[![Chrome](https://img.shields.io/badge/Chrome-Extension-4285F4?logo=googlechrome&logoColor=white)](https://developer.chrome.com/docs/extensions/)
+[![Manifest](https://img.shields.io/badge/Manifest-V3-34A853?logo=google&logoColor=white)](https://developer.chrome.com/docs/extensions/mv3/)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![JavaScript](https://img.shields.io/badge/JavaScript-Vanilla-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+
+---
+
+</div>
+
+## Demo
+
+<!-- Replace with your actual demo GIF -->
+<!-- Record with: Chrome DevTools > More Tools > Recorder, or use a screen recorder -->
+
+> **Coming soon** — a short GIF showing the extension in action.
+>
+> In the meantime, here's what it looks like:
+
+```
+┌─────────────────────────────┐
+│  FB Comment Scraper         │
+│                             │
+│  [▶ Start Scraping] [Stop]  │
+│                             │
+│  ✓ Scrolling to load...     │
+│  ✓ Expanding threads...     │
+│  ✓ Parsing 142 comments...  │
+│  ✓ Exported to CSV!         │
+└─────────────────────────────┘
+```
 
 ## Features
 
-- Auto-scrolls to load all comments on a post
-- Expands collapsed comment threads ("View more comments", "See more", replies)
-- Parses author name, comment text, and timestamp
-- Exports results as a downloadable CSV file
-- Supports both desktop and mobile Facebook layouts
+| Feature | Description |
+|---------|-------------|
+| **Auto-Scroll** | Scrolls the entire page to load all comments |
+| **Thread Expansion** | Clicks "View more comments", "See more", and reply threads |
+| **Smart Parsing** | Extracts author name, comment text, and timestamp |
+| **CSV Export** | One-click download as `fb_comments.csv` |
+| **Dual Layout** | Works on both desktop and mobile Facebook views |
 
-## Installation
+## Quick Start
 
-1. Clone this repository.
-2. Navigate to `chrome://extensions` in Chrome.
-3. Enable **Developer mode** (top-right toggle).
-4. Click **Load unpacked** and select this directory.
+### 1. Install
 
-## Usage
+```bash
+git clone https://github.com/dan-tech-academy/fb-comments-export-extensions.git
+```
 
-1. Open a Facebook post with comments.
-2. **Tip:** Resize the browser window to a narrow width so Facebook loads its mobile layout — this makes scraping more precise and faster.
-3. Click the extension icon in the toolbar.
-4. Click **Start Scraping** — the extension will scroll, expand threads, and parse comments.
-5. A `fb_comments.csv` file will download automatically when finished.
-6. Click **Stop** at any time to cancel.
+Then load in Chrome:
+
+```
+chrome://extensions → Enable Developer mode → Load unpacked → Select folder
+```
+
+### 2. Scrape
+
+```
+Open Facebook post → Resize window to narrow width* → Click extension → Start Scraping
+```
+
+> **Pro tip:** Resize the browser window to a narrow width so Facebook loads its mobile layout. This makes scraping **more precise and faster**.
+
+### 3. Export
+
+The extension auto-downloads `fb_comments.csv` when finished:
+
+```csv
+Author,Comment,Date
+"John Doe","Great post!","2d"
+"Jane Smith","Thanks for sharing","1w"
+```
+
+## How It Works
+
+```
+┌──────────┐     ┌──────────────┐     ┌──────────────┐     ┌────────────┐
+│  Popup   │────▶│  Auto-Scroll │────▶│   Expand     │────▶│   Parse    │
+│  Start   │     │  Load All    │     │   Threads    │     │  Comments  │
+└──────────┘     └──────────────┘     └──────────────┘     └─────┬──────┘
+                                                                  │
+                                                                  ▼
+                                                           ┌────────────┐
+                                                           │  Download  │
+                                                           │   CSV      │
+                                                           └────────────┘
+```
 
 ## Limitations
 
 - Facebook frequently changes its DOM structure — selectors may need updating if scraping stops working.
 - Very large exports may hit browser size limits for `data:` URI downloads.
 
-## Sponsor
+---
 
-This project is part of the tutorial series by [DanTech Academy](https://www.dantech.academy).
+<div align="center">
 
-Sponsored by the [Kotlin Accelerator Course](https://www.dantech.academy/kotlin-accelerator) — a hands-on course to master Kotlin from fundamentals to advanced topics.
+### Sponsored by
 
-## License
+[![DanTech Academy](https://img.shields.io/badge/DanTech-Academy-FF6B00?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0id2hpdGUiPjxwYXRoIGQ9Ik0xMiAyTDIgN2wxMCA1IDEwLTV6TTIgMTdsMTAgNSAxMC01TTIgMTJsMTAgNSAxMC01Ii8+PC9zdmc+&logoColor=white)](https://www.dantech.academy)
 
-MIT
+**Part of the tutorial series by [DanTech Academy](https://www.dantech.academy)**
+
+This project is sponsored by the [**Kotlin Accelerator Course**](https://www.dantech.academy/kotlin-accelerator) — a hands-on course to master Kotlin from fundamentals to advanced topics.
+
+[![Kotlin Accelerator](https://img.shields.io/badge/Enroll_Now-Kotlin_Accelerator-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)](https://www.dantech.academy/kotlin-accelerator)
+
+---
+
+**MIT License** · Made with JavaScript · No dependencies
+
+</div>
