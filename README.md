@@ -1,6 +1,8 @@
 <div align="center">
 
-# 💬 FB Comment Scraper
+<img src="banner.svg" alt="FB Comment Scraper" width="100%">
+
+<br>
 
 **Chrome Extension (Manifest V3) to scrape Facebook post comments and export to CSV**
 
