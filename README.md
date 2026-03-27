@@ -63,18 +63,9 @@ Author,Comment,Date
 
 ## How It Works
 
-```
-┌──────────┐     ┌──────────────┐     ┌──────────────┐     ┌────────────┐
-│  Popup   │────▶│  Auto-Scroll │────▶│   Expand     │────▶│   Parse    │
-│  Start   │     │  Load All    │     │   Threads    │     │  Comments  │
-└──────────┘     └──────────────┘     └──────────────┘     └─────┬──────┘
-                                                                  │
-                                                                  ▼
-                                                           ┌────────────┐
-                                                           │  Download  │
-                                                           │   CSV      │
-                                                           └────────────┘
-```
+<p align="center">
+  <img src="how-it-works.svg" alt="Pipeline: Popup Start → Auto-Scroll → Expand Threads → Parse Comments → Download CSV" width="100%">
+</p>
 
 ## Limitations
 
