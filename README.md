@@ -15,10 +15,8 @@
 
 </div>
 
-## Demo
-
 <p align="center">
-  <img src="demo.svg" alt="FB Comment Scraper Demo" width="340">
+  <img src="demo.svg" alt="FB Comment Scraper Demo" width="100%">
 </p>
 
 ## Features
